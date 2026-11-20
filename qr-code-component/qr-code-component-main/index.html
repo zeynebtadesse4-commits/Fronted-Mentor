@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | QR code component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"/>
+
+    <style>
+      :root {
+      
+        --white: hsl(0, 0%, 100%);
+        --slate-900: hsl(218, 44%, 22%);   /* dark blue for the heading */
+        --slate-500: hsl(220, 15%, 55%);   /* grey for the small text */
+        --slate-300: hsl(212, 45%, 89%);     /* light blue page background */
+
+        --font-family: "Outfit", sans-serif;
+        --font-size-body: 18px;
+        --font-size-title: 22px;
+        --weight-regular: 450;
+        --weight-bold: 700;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        background-color: var(--slate-300);
+        font-family: var(--font-family);
+        font-size: var(--font-size-body);
+        margin: 0;                        
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;           
+        align-items: center;               
+      }
+
+      .card {
+        background-color: var(--white);
+        width: 320px;
+        padding: 16px;                     
+        border-radius: 20px;               
+        text-align: center;
+        box-sizing: border-box;            
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .card h1 {
+        color: var(--slate-900);
+        font-size: var(--font-size-title);
+        font-weight: var(--weight-bold);
+        margin: 24px 16px 16px 16px;       
+      }
+
+      .card p {
+        color: var(--slate-500);
+        font-weight: var(--weight-regular);
+        font-size: var(--font-size-body);
+        margin: 0 0 8px 0;
+        line-height: 1.5;                  
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR code for Frontend Mentor" />
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
+  </body>
+</html>
