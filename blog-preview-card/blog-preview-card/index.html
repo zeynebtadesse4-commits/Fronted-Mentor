@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet" />
+  <title>Frontend Mentor | Blog preview card</title>
+ 
+    <style>
+      :root {
+        --yellow: hsl(47, 88%, 63%);
+        --white: hsl(0, 0%, 100%);
+        --gray: hsl(0, 0%, 42%);
+        --black: hsl(0, 0%, 7%);
+      }
+
+      body {
+        background-color: var(--yellow);
+        font-family: "Figtree", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
+        padding: 25px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        background-color: var(--white);
+        width: 100%;
+        max-width: 385px;
+        box-sizing: border-box;   
+        padding: 25px;
+        border: 1px solid var(--black);
+        border-radius: 20px;
+        box-shadow: 8px 8px 0 var(--black);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: var(--yellow);
+        font-size: 14px;
+        font-weight: 800;
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin: 24px 0 14px 0;
+      }
+
+      .date {
+        font-size: 14px;
+        margin: 0 0 18px 0;
+      }
+
+      .title {
+        font-size: 25px;
+        font-weight: 800;
+        margin: 0 0 17px 0;
+      }
+
+      .title a {
+        color: var(--black);
+        text-decoration: none;
+      }
+       
+      .title a:hover {
+        color: var(--yellow);
+      }
+      .text {
+        color: var(--gray);
+        line-height: 1.5;
+        margin: 0 0 24px 0;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .author img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+
+      .author span {
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      @media (max-width: 600px) {
+        .tag {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+
+        .date {
+          font-size: 12px;
+        }
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 13px;
+        }
+
+        .text {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="Abstract illustration" />
+
+      <span class="tag">Learning</span>
+      <p class="date">Published 21 Dec 2023</p>
+
+      <h1 class="title">
+        <a href="#">HTML &amp; CSS foundations</a>
+      </h1>
+
+      <p class="text">
+        These languages are the backbone of every website, defining structure, content, and
+        presentation.
+      </p>
+
+      <div class="author">
+        <img src="./assets/images/image-avatar.webp" alt="Greg Hooper" />
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+  </body>
+</html>
