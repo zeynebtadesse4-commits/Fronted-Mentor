@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+   
+   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+  @theme {
+      --blue-50: hsl(225, 100%, 98%);
+      --blue-100: hsl(225, 100%, 94%);
+      --blue-700: hsl(245, 75%, 52%);
+      --blue-950: hsl(223, 47%, 23%);
+      --gray-600: hsl(224, 23%, 55%);
+      --blue-400: hsl(245, 80%, 69%); 
+      --font-display: "Red Hat Display", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col bg-blue-100 bg-[url('./images/pattern-background-mobile.svg')] md:bg-[url('./images/pattern-background-desktop.svg')] bg-top bg-no-repeat bg-[length:100%_auto] font-display text-base">
+
+  <main class="flex-1 flex items-center justify-center p-6">
+    <article class="w-full max-w-[27rem] bg-white rounded-3xl overflow-hidden shadow-2xl shadow-blue-700/20">
+      <img src="./images/illustration-hero.svg" alt="" class="w-full">
+      <div class="p-6 md:p-12 md:pt-10">
+        <h1 class="text-[1.75rem] font-black text-blue-950 text-center">Order Summary</h1>
+        <p class="mt-4 text-gray-600 text-center leading-relaxed">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+
+        <div class="mt-6 flex items-center gap-4 bg-blue-50 p-6 rounded-xl">
+          <img src="./images/icon-music.svg" alt="" class="size-12">
+          <div class="flex-1">
+            <h2 class="font-bold text-blue-950">Annual Plan</h2>
+            <p class="text-gray-600">$59.99/year</p>
+          </div>
+          <a href="#" class="font-bold text-blue-700 underline hover:text-blue-400">Change</a>
+        </div>
+
+        <button type="button" class="mt-6 w-full py-4 bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-700/40 hover:bg-blue-400 cursor-pointer transition-colors">
+          Proceed to Payment
+        </button>
+        
+        <button type="button" class="mt-6 w-full font-bold text-gray-600 hover:text-blue-950 cursor-pointer transition-colors">
+          Cancel Order
+        </button>
+
+      </div>
+    </article>
+  </main>
+
+</body>
+</html>
